@@ -15,6 +15,16 @@ def bigger(a,b):
     else:
         print(b)
 
+bigger(3,4)
+bigger(4,3)
+bigger("Smedinghoff","Sam")
+bigger(True,False)
+
+def slope(x1, y1, x2, y2):
+    print((y2-y1)/(x2-x1))
+
+slope(1,1,2,2)
+
 double(12) #test of double funtion
 double('w') #test of double iwth string input
 
