@@ -9,6 +9,12 @@ def hw():
 def double(thingToDouble):
     print(thingToDouble * 2)
 
+def bigger(a,b):
+    if a>b:
+        print(a)
+    else:
+        print(b)
+
 double(12) #test of double funtion
 double('w') #test of double iwth string input
 
