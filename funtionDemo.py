@@ -20,6 +20,9 @@ bigger(4,3)
 bigger("Smedinghoff","Sam")
 bigger(True,False)
 
+print("the max of 3 and 4 is", max(3,4))
+print("the max of 3 and 4 is", bigger(3,4))
+
 def slope(x1, y1, x2, y2):
     print((y2-y1)/(x2-x1))
 
