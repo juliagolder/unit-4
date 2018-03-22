@@ -12,6 +12,15 @@ CELL_SIZE = 20
 def moveRight(event):
     monkey.x += CELL_SIZE
 
+def moveLeft(event):
+    monkey.x -= CELL_SIZE
+    
+def moveUp(event):
+    monkey.y -= CELL_SIZE
+    
+def moveDown(event):
+    monkey.y += CELL_SIZE
+
 if __name__ == '__main__':
 
     #colors
@@ -26,6 +35,9 @@ if __name__ == '__main__':
     monkey = Sprite(monkeyBox)
     
     App().listenKeyEvent('keydown', 'right arrow',moveRight)
+    App().listenKeyEvent('keydown', 'left arrow',moveLeft)
+    App().listenKeyEvent('keydown', 'down arrow',moveDown)
+    App().listenKeyEvent('keydown', 'up arrow',moveUp)
     
     App().run()
     
