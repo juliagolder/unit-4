@@ -17,19 +17,19 @@ def moveRight(event):
             moveBanana()
 
 def moveLeft(event):
-    if monkey.x > (COLS-1)*CELL_SIZE:
+    if monkey.x > 0:
         monkey.x -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
     
 def moveUp(event):
-    if monkey.y < (COLS-1)*CELL_SIZE:
+    if monkey.y > 0:
         monkey.y -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
     
 def moveDown(event):
-    if monkey.y > (COLS-1)*CELL_SIZE:
+    if monkey.y < (COLS-1)*CELL_SIZE:
         monkey.y += CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
@@ -41,7 +41,7 @@ def moveBanana():
 if __name__ == '__main__':
     
     #hold variables in a dictionary
-    
+    data = {}
 
     #colors
     green = Color(0x006600, 1)
