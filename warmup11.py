@@ -2,9 +2,13 @@
 #3/26/18
 #warmup11.py
 
-n = int(input('Enter a number: '))
-i = 1
-while i<=n/2:
-    if n%i == 0:
-        print(i)
-i += 1
+
+def prime(n):
+    for i in range(2,n):
+        if n%i == 0:
+            return False
+    return True
+
+print(prime(9))
+print(prime(10))
+print(prime(11))
