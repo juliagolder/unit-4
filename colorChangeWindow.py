@@ -3,13 +3,17 @@
 #colorChangeWindow.py
 
 
-ROWS = 2
-COLS = 2
-CELL_SIZE = 20
+from ggame import *
+from random import randint
 
-rectangle = RectangleAsset(CELL_SIZE*COLS, CELL_SIZE*ROWS, LineStyle(1,green),green)
+green = Color(0x006600, 1)
+lime = Color(0x00FF00, 1)
 
-mouseClick(event)
+rectangle = RectangleAsset(400,400, LineStyle(1,lime),lime)
 
-App().listenMouseEvent(‘click’, mouseClick)
+Sprite(rectangle)
+
+
 App().run()
+
+
