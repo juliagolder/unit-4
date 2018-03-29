@@ -4,5 +4,9 @@
 
 
 
-for i in range(0,10):
-    print('*' * i)
+def printnStars(x):
+    for x in range(1,x + 1):
+        print('*' * x)
+
+
+printnStars(6)
