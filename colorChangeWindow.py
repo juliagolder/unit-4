@@ -15,5 +15,5 @@ Sprite(rectangle)
 
 
 App().run()
-
-
+def mouseClick(event):
+    lightBlue = Color(0x49fbff,1)
