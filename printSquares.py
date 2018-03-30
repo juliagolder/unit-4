@@ -3,7 +3,11 @@
 #printSquares.py
 
 
-def squares(c,r):
+def square(c,r):
     for i in range(0,c):
-        print('+ - - + - - + - - + - - +')
-        print('|     |     |     |     |')
+        print('+ - - ' *r, '+')
+        print('|     ' *r, '|')
+    print('+ - - ' *r, '+')
+
+
+square(5,8)
