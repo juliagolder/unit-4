@@ -2,11 +2,11 @@
 #4/1/18
 #stringUnion.py
 
-def union(w1,w2):
+def stringunion(word1,word2):
     answer = ''
-    for ch in w1 + w2:
+    for ch in word1 + word2:
         if ch not in answer:
             answer = answer + ch
-    retun(Answer)
-
-print(union('Mississippi', 'Pennsylvania'))
+    return(answer)
+    
+print(stringunion('mississippi', 'pennsylvania'))
