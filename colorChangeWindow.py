@@ -16,4 +16,4 @@ Sprite(rectangle)
 
 App().run()
 def mouseClick(event):
-    lime = Color(0x00FF00, 1)
+    green = Color(0x006600, 1)
