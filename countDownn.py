@@ -3,6 +3,7 @@
 #countDownn.py
 
 
-for i in range(5,0,-1)):
-    print(i)
-print('BOOM!')
+def countdown(x):
+    for x in range(x,0,-1):
+        print(x)
+    print('BOOM!')
